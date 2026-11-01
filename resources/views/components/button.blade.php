@@ -4,7 +4,7 @@
         'secondary' => 'bg-[#E5DFD4] hover:bg-[#DCD5C8] text-[#1C1916] border border-[#D2C8B8]',
         'outline' => 'bg-transparent hover:bg-[#EAE4D9] text-[#1C1916] border border-[#D2C8B8]',
         'inverted' => 'bg-[#1C1916] hover:bg-[#2C2723] text-white',
-        default => 'bg-[#A13E0C] hover:bg-[#883208] text-white font-medium shadow-xs',
+        default => 'bg-[#A13E0C] hover:bg-[#883208] text-white font-medium shadow-sm',
     };
 @endphp
 @if ($href)

@@ -20,7 +20,7 @@
             <div class="flex items-center justify-between h-16 gap-4">
                 <div class="flex items-center gap-8 shrink-0">
                     <a href="{{ route('home') }}" class="flex items-center gap-2.5">
-                        <div class="w-8 h-8 rounded-md border border-[#1C1916] overflow-hidden flex flex-col shadow-xs">
+                        <div class="w-8 h-8 rounded-md border border-[#1C1916] overflow-hidden flex flex-col shadow-sm">
                             <div class="h-1/3 bg-[#0EA5E9]"></div>
                             <div class="h-1/3 bg-[#F59E0B]"></div>
                             <div class="h-1/3 bg-[#EA580C]"></div>
@@ -86,7 +86,7 @@
         {{ $slot }}
     </main>
 
-    <footer class="border-t border-[#E5DFD4] bg-[#F3EDE3] py-6 text-center text-xs text-[#1C1916]/65">
+    <footer class="border-t border-[#E5DFD4] bg-[#F3EDE3] py-6 text-center text-xs text-[#1C1916]/70">
         <p>&copy; {{ date('Y') }} CineTrack — Physical Film Ledger. All rights reserved.</p>
     </footer>
 </body>
