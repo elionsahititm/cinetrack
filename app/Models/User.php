@@ -35,6 +35,41 @@ class User extends Authenticatable implements MustVerifyEmail, PasskeyUser
     /** @use HasFactory<UserFactory> */
     use HasFactory, Notifiable, PasskeyAuthenticatable, TwoFactorAuthenticatable;
 
+    public function role()
+    {
+        return $this->belongsTo(Role::class);
+    }
+
+    public function country()
+    {
+        return $this->belongsTo(Country::class);
+    }
+
+    public function watchlistEntries()
+    {
+        return $this->hasMany(WatchlistEntry::class);
+    }
+
+    public function reviews()
+    {
+        return $this->hasMany(Review::class);
+    }
+
+    public function episodeReviews()
+    {
+        return $this->hasMany(EpisodeReview::class);
+    }
+
+    public function viewings()
+    {
+        return $this->hasMany(Viewing::class);
+    }
+
+    public function episodeViewings()
+    {
+        return $this->hasMany(EpisodeViewing::class);
+    }
+
     /**
      * Get the attributes that should be cast.
      *
